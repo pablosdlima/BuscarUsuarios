@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Usuários</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body class="container">
+    <h1 align="center">Consulta de Usuários</h1>
+
+    <input class="validate" type="search" name="" id="ipt_buscar" placeholder="Buscar:" required>
+    <input class="btn dark right" type="submit" value="Buscar">
+    
+    <h4><strong id ="nRegistros"></strong> Usuários encontrados</h4>
+    <hr>
+    <div class="colletion">
+        <h5>Estátistica</h3>
+        <ul class="colletion">
+            <li style="display:inline;">Sexo Masculino: <strong id="quantSexM" class="sub">|</strong></li>
+            <li style="display:inline;">Sexo Feminino: <strong id="quantSexF" class="sub">|</strong></li>
+            <li style="display:inline;">Soma das Idades:  <strong id="somaIdade">|</strong class="sub"></li>
+            <li style="display:inline;">Média das Idades: <strong id="mediaIdade">|</strong class="sub"></li>
+        </ul>
+    </div>
+    <div class="row ">
+        <div id="div_usuario" class="colletion">
+            
+        </div>
+        <div id="div_estatistica" class="colletion">
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
